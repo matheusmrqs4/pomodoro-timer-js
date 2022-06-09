@@ -25,6 +25,7 @@ const pomodoro = {
 
         document.getElementById('pause').onclick = function(){
             self.pauseTimer.apply(self)
+            document.getElementById('start').disabled = false
         }
 
         document.getElementById('reset').onclick = function(){
