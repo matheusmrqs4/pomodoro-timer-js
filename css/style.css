@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#pomodoro-app{
+    background-color: #f0f8ff;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s;
+}
+
+#container{
+    border-radius: 20px;
+    width: 400px;
+    height: 450px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.025);
+}
+
+#timer{
+    color: #2fa1ff;
+    font-size: 50px;
+    margin: 10px auto;
+    border: 5px solid #2fa1ff;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor:default;
+}
+
+#time{
+    margin-top: 50px;
+    z-index: 1;
+    position: relative;
+}
+
+#filler{
+    height: 0px;
+    width: 200px;
+    position:absolute;
+    bottom:0;
+}
+
+#buttons button{
+    background-color: #e9f5ff;
+    border: none;
+    color: #2fa1ff;
+    cursor: pointer;
+    padding: 5px;
+    margin: 10px auto;
+    font-size: 16px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+#start, #pause, #reset{
+    width: 100px;
+}
+
+#short-break, #long-break{
+    width: 130px;
+}
+
+#start:hover, #pause:hover, #reset:hover, #short-break:hover, #long-break:hover{
+    background-color: #2EC0F9;
+    color:#fff;
+}
+
+#start:active, #pause:active, #reset:active, #short-break:active, #long-break:active{
+    background-color: #2fa1ff;
+    box-shadow: 0 1px rgb(255, 255, 255);
+    transform: translateY(2px);
+}
+
+button:focus {
+    outline:0;
+}
+
+#toggle{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #e9f5ff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#toggle:before{
+    content: '\f186';
+    font-family: fontAwesome;
+    color: #2fa1ff;
+    font-size: 22px;
+}
+
+div.dark #toggle:before{
+    content: '\f185';
+    font-family: fontAwesome;
+}
+
+#pomodoro-app.dark{
+    background-color: #24292d;
+}
+
+#pomodoro-app.dark #container{
+    background-color: #323840;
+}
+
+#pomodoro-app.dark button{
+    background-color: #404852;
+}
+
+#pomodoro-app.dark #start:hover, 
+#pomodoro-app.dark #pause:hover, 
+#pomodoro-app.dark #reset:hover, 
+#pomodoro-app.dark #short-break:hover, 
+#pomodoro-app.dark #long-break:hover{
+    background-color: #6d6e6e;
+}
+
+#pomodoro-app.dark #toggle{
+    background-color: #404852;
+}
+
+#pomodoro-app.dark .assig{
+    color: #e9f5ff;
+}
+
+.assig{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.assig a{
+    color: #2fa1ff;
+}
+
+.assig a:hover{
+    color: #2EC0F9;
+}
+

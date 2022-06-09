@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+        <!-- JavaScript -->
+        <script src="script.js"></script> 
+
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/2b78cdcb10.js" crossorigin="anonymous"></script>
+
+        <!-- Icon -->
+        <link rel="icon" href="./icon/icon.png">
+    
+        <title>Pomodoro Timer</title>
+
+    </head>
+    <body>
+        <section>
+            <div id="pomodoro-app" class="dark-light">
+                <div id="container">
+                    <section>
+                    <div id="toggle"></div>
+                    </section>
+                    <div id="timer">
+                        <div id="time">
+                            <span id="min">00</span>
+                            <span id="col">:</span>
+                            <span id="sec">00</span>
+                            <audio id="audio" src="audio/ring.mp3"></audio>
+                        </div>
+
+                        <div id="filler"></div>
+                    </div>
+
+                    <div id="buttons">
+                        <button title="Início" type="button" id="start"><i class="fas fa-play"></i></button>
+                        <button title="Pause" type="button" id="pause"><i class="fas fa-pause"></i></button>
+                        <button title="Resetar" type="button" id="reset"><i class="fas fa-redo"></i></button>
+                        <button title="Intervalo" type="button" id="short-break">Intervalo</button>
+                        <button title="Intervalo Longo" type="button" id="long-break">Intervalo Longo</button>
+                    </div>
+                        <p class="assig">created by: <a rel="noopener" href="http://twitter.com/m_marqs1" target="_blank"> <i class="fab fa-twitter"></i>@m_marqs1</a></p>
+                </div>
+            </div>
+        </section>
+            <!-- JavaScript -->
+        <script src="dark-light.js"></script> 
+    </body>
+    
+</html>
