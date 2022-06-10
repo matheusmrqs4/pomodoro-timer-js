@@ -12,7 +12,8 @@
 
 <ul>
     <li>Pausar e Resetar o Timer;</li>
-    <li>Alternar entre Dark e Light Mode.</li>
+    <li>Alternar entre Dark e Light Mode;</li>
+    <li>Notificação com áudio de quando o Timer zerar.</li>
 </ul>
 
 <h3>Tecnologias Usadas</h3>
