@@ -18,7 +18,7 @@ const pomodoro = {
             self.intervalCallback.apply(self)
         }, 1000)
 
-        document.getElementById('start').onclick = function(){
+       document.getElementById('start').onclick = function(){
             self.startTimer.apply(self)
             document.getElementById('start').disabled = true
         }
@@ -26,6 +26,8 @@ const pomodoro = {
         document.getElementById('pause').onclick = function(){
             self.pauseTimer.apply(self)
             document.getElementById('start').disabled = false
+            document.getElementById('short-break').disabled = false
+            document.getElementById('long-break').disabled = false
         }
 
         document.getElementById('reset').onclick = function(){
@@ -35,7 +37,7 @@ const pomodoro = {
 
         document.getElementById('short-break').onclick = function(){
             self.startIntervalo.apply(self) 
-            document.getElementById('start').disabled = true
+            document.getElementById('start').disabled = false
             document.getElementById('short-break').disabled = true
         }
 
