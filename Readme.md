@@ -26,4 +26,4 @@
 <img src="https://i.imgur.com/j8H8uwr.png">
 <img src="https://i.imgur.com/NxxMIHa.png">
 
-<a href="https://matheusmrqs4.github.io/pomodoro-timer-js/"><h3>Link GitHub Pages</h3></a>
+<a href="https://lnkd.in/eWRZVk-k"><h3>Link GitHub Pages</h3></a>
